@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import api from "./services/api";
 
+// Rota
+import Routes from "./routes";
+
 // Estilo raiz
 import "./styles.css";
 
@@ -12,7 +15,7 @@ import Main from "./pages/main";
 const App = () => (
   <div className="App">
     <Header/>
-    <Main/>
+    <Routes/>
   </div>
 );
 
