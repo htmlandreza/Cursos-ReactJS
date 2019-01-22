@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import api from "./services/api";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Hello!</h1>
-      </div>
-    );
-  }
-}
+// Estilo raiz
+import "./styles.css";
+
+// Componentes
+import Header from "./components/Header";
+import Main from "./pages/main";
+
+// Função: stateless component
+const App = () => (
+  <div className="App">
+    <Header/>
+    <Main/>
+  </div>
+);
 
 export default App;
